@@ -1,0 +1,235 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    height: 100%;
+	scroll-behavior: smooth;
+}
+
+.oudenaardebg {
+	background: url("/images/oudenaarde.jpg");
+	height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+	background: white;
+	opacity: 1;
+	font-weight: bold;
+	font-size: larger;
+}
+
+.welcometext{
+	text-align: center;
+	font-size: 80px;
+	margin-top: 150px;
+	position: relative
+}
+
+ul, nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+.bg {
+	height: 40%;
+	background-image: url(/images/oudenaarde.jpg);
+	height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: block;
+}
+
+@media (max-width: 1000px){
+	.bg{
+		height: 15%;
+	}
+}
+
+.section-title {
+	text-transform: uppercase;
+	font-size: 42px;
+	margin-bottom: 3%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+header {
+	position: relative;
+  }
+  
+header::after {
+	content: "";
+	position: absolute;
+	bottom: -5px; /* Adjust this value to position the border correctly */
+	left: 50%;
+	transform: translateX(-50%);
+	width: 75%;
+	height: 1.5px;
+	background-color: #000; /* Change this to the desired border color */
+}
+
+/*about-area*/
+
+.about-area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 5px;
+	text-align: justify;
+}
+
+.about-area div{
+	padding: 20px;
+}
+
+.about-area img{
+	height: 250px;
+}
+
+.about-area p{
+	max-width: 500px;
+}
+
+@media (max-width: 1000px) {
+	.about-area {
+	  flex-direction: column;
+	}
+	.about-area img {
+	  width: 350px;
+	  height: auto;
+	}
+	.about-area p {
+	  font-size: 0.9em;
+	  max-width: none;
+	}
+}
+
+/*carousel*/
+
+#carousel{
+	height: 200px;
+	width: 350px;
+	display: block;
+	margin: 30px auto;
+}
+
+#carousel img {
+	height:200px !important;
+	width: 350px !important;
+}
+
+#carousel2{
+	height: 200px;
+	width: 350px;
+	display: block;
+	margin: 30px auto;
+}
+
+#carousel2 img {
+	height:200px !important;
+	width: 350px !important;
+}
+
+#carousel3{
+	height: 200px;
+	width: 350px;
+	display: block;
+	margin: 30px auto;
+}
+
+#carousel3 img {
+	height:200px !important;
+	width: 350px !important;
+}
+
+/*download area*/
+
+.download-area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 5px;
+	text-align: justify;
+}
+
+.download-area div{
+	padding: 20px;
+}
+
+.download-area p{
+	max-width: 500px;
+}
+
+/*contact area*/
+
+ul.contact-content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px auto;
+}
+.contact-content li {
+	padding: 0 30px;
+	flex-basis: 15%;
+	text-align: center;
+}
+.contact-content li i {
+	font-size: 50px;
+	color: black;
+	margin-bottom: 25px;
+}
+.contact-content li p {
+	margin: 0;
+}
+@media (max-width: 1000px) {
+	.contact-content{
+		justify-content: center;
+	}
+	
+	.contact-content li {
+		flex-basis: 40%;
+		margin-bottom: 65px;
+		padding: 40px;
+		flex-grow: 1;
+	
+	}
+	.contact-content li:last-child {
+		margin-bottom: 0;
+	}
+	.contact-content li p {
+		padding: 0;
+		font-size: 12px;
+	}
+}
+
+
+/*footer*/
+
+footer {
+    margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: white;
+	background-color: black;
+	padding: 25px 0;
+}
+
